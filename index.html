@@ -1,19 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Anti-Drug Web Page with Video Background</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudo: Choices</title>
+    <link rel="icon" href="/assets/tab-logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
 </head>
 <body>
-	<nav>
-		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Prevention</a></li>
-			<li><a href="#">Treatment</a></li>
-			<li><a href="#">Resources</a></li>
-		</ul>
-	</nav>
+    <nav>
+        <img src="/assets/sudo.png" alt="Logo" class="logo">
+
+        <ul class="nav-links">
+            <li><a href="https://sudo-choices.vercel.app/#homeSection">Home</a></li>
+            <li><a href="https://sudo-choices.vercel.app/#aboutTeam">About Team: <strong>Sudo</strong></a></li>
+            <li><a href="https://sudo-choices.vercel.app/#aboutProject">About Project</a></li>
+            <li><a onclick="comingSoon(this)" class="ai-button">Ai Counselling</a></li>
+        </ul>
+        <button class="hamburger-menu" onclick="toggleMenu()"></button>
+        <div class="menu-overlay">
+            <ul class="menu-overlay-items">
+                <li><a href="https://sudo-choices.vercel.app/#homeSection" onclick="hideMenu()">Home</a></li>
+                <li><a href="https://sudo-choices.vercel.app/#aboutTeam" onclick="hideMenu()">About Team:
+                        <strong>Sudo</strong></a></li>
+                <li><a href="https://sudo-choices.vercel.app/#aboutProject" onclick="hideMenu()">About Project</a></li>
+                <li><a onclick="comingSoon(this)" class="ai-button">Ai Counselling</a></li>
+            </ul>
+        </div>
+    </nav>
 	<video autoplay loop muted id="background-video">
 		<source src="High School of the Dead - S1E09 (10).mp4" type="video/mp4">
 	</video>
@@ -26,6 +48,7 @@
 			<li>Reach out for help if you or someone you know is struggling with drug abuse</li>
 		</ul>
 	</div>
+<script src="script.js"></script>
 
 </body>
 </html>
